@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: stg_registrations
+    description: "Staging model that cleans and organizes registration data before further transformations."
+    columns:
+      - name: visit_id
+        description: "A numeric identifier for a single website visit."
+        tests:
+          - not_null
+          - unique
+
+      - name: user_id
+        description: "A unique identifier for the user, typically a UUID."
+        tests:
+          - not_null
+          - unique
+
+      - name: registered_at
+        description: "A timestamp indicating when the user registered."
+        tests:
+          - not_null
