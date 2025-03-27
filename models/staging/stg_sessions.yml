@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_sessions
+    description: "Staging model that cleans and organizes sessions data before further transformations."
+    columns:
+      - name: visit_id
+        description: "A numeric identifier for a visit."
+        tests:
+          - not_null
+          - unique

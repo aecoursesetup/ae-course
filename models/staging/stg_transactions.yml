@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_transactions
+    description: "Staging model that cleans and organizes transactions data before further transformations."
+    columns:
+      - name: order_id
+        description: "A numeric identifier for an order."
+        tests:
+          - not_null
+          - unique
