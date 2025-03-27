@@ -2,8 +2,10 @@
 
 select
     visit_id,
-    visit_start_time,
-    visit_end_time,
+    visit_start_time as visit_start_utc,
+    datetime(timestamp(visit_start_time), "America/New_York") as visit_start_et,
+    visit_end_time as visit_end_utc,
+    datetime(timestamp(visit_end_time), "America/New_York") as visit_end_et,
     device_type,
     browser,
     pageview_count,
