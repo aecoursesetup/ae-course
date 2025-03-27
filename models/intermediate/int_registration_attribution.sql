@@ -25,5 +25,5 @@ select
     b.channel_group,
     user_id
 from registrations as a
-left join sessions as b
+inner join sessions as b
     on a.visit_id = b.visit_id
