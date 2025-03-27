@@ -1,0 +1,20 @@
+spend_type,attributed_channel,attributed_subchannel,channel_group
+unpaid,direct,direct,Direct
+unpaid,organic search,bing,Search
+unpaid,organic search,google,Search
+unpaid,organic search,yahoo,Search
+unpaid,organic social,instagram,Social
+unpaid,organic social,tiktok,Social
+unpaid,organic social,facebook,Social
+unpaid,organic social,twitter,Social
+unpaid,organic social,reddit,Social
+paid,paid search,google,Search
+paid,paid search,bing,Search
+paid,paid search,yahoo,Search
+paid,paid social,twitter,Social
+paid,paid social,instagram,Social
+paid,paid social,facebook,Social
+paid,paid social,tiktok,Social
+paid,paid social,reddit,Social
+unpaid,referral,website3.com,Referral
+unpaid,referral,website1.com,Referral
