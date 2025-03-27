@@ -10,9 +10,11 @@ select
     browser,
     pageview_count,
     sessions.spend_type,
+    mapping.channel_group,
     sessions.attributed_channel,
     sessions.attributed_subchannel,
-    channel_group,
+    JSON_VALUE(session_metadata, '$.utm_campaign') as utm_campaign,
+    JSON_VALUE(session_metadata, '$.utm_keyword') as utm_keyword,
     session_metadata
 from {{ source('class_source_data','sessions') }} as sessions
 left join {{ ref('marketing_mapping') }} as mapping
