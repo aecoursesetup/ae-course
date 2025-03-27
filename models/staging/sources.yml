@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: class_source_data
+    database: ae-class-project      # BigQuery project name
+    schema: class_source_data       # BigQuery dataset name
+    tables:
+      - name: registrations
+      - name: sessions
+      - name: transactions
