@@ -22,7 +22,7 @@ from {{ref('stg_transactions') }}
 )
 
 select
-    sessions.visit_id,
+    sessions.visit_id as visit_id,
     sessions.visit_start_et,
     case when reg.visit_id is not null then 1 else 0 end as has_registration,
     case when orders.visit_id is not null then 1 else 0 end as has_order

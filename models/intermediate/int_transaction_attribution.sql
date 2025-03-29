@@ -17,7 +17,7 @@ from {{ ref('stg_sessions')}}
 select
 order_created_et,
 channel_group,
-transactions.visit_id
+transactions.visit_id as transaction_visit_id
 from visits
 join transactions
     on visits.visit_id = transactions.visit_id
